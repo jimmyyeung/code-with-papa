@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess Game</h1>
+        <div class="info">
+            <p>Current Turn: <span id="turn">White</span></p>
+            <p id="status">Game in progress</p>
+            <p>AI ELO: <input type="number" id="aiElo" min="100" max="2800" value="600" step="100"></p>
+            <button id="resetBtn">New Game</button>
+            <button id="undoBtn">Undo</button>
+            <button id="undoAllBtn">Undo All</button>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="controls">
+            <p>White: You | Black: AI</p>
+            <p id="moveLog"></p>
+        </div>
+    </div>
+    <script src="chess.js"></script>
+</body>
+</html>
